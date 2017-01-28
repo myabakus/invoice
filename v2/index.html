@@ -11,10 +11,19 @@
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Paytone+One">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato">
+        
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <!-- jquery y bootstrap css -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
-    <body>
-        <div class="invoice">
-            <div class="top-left">
+    <body class="cuerpo">
+        <div class="container invoice">
+            <!-- COMIENZO CAJA IZQUIERDA ENCABEZADO -->
+         <div class="row ">
+            <div class="top-left col-xs-12 col-sm-8 col-md-8 col-lg-8">
                 <div class="logo">
                   Miguel Uribe MV S.A.S
                 </div>  
@@ -24,18 +33,29 @@
                     <p>IVA Regimen Común</p>
                 </div>
             </div>
-            <div class="company-info">
+            <!-- FIN CAJA IZQUIERDA ENCABEZADO -->
+            
+            <!-- COMIENZO CAJA DERECHA ENCABEZADO -->
+            <div class="company-info col-xs-12 col-sm-4 col-md-4 col-lg-4">
                 <p id="company">Miguel Uribe MV S.A.S</p>
                 <p>Nit. 900643855-4</p>
                 <p>migauribe@yahoo.com</p>
                 <p>3212900914</p>
                 <p>Kr 79 No. 127C - 45 IN 2 AP 101</p>
             </div>
+            <!-- FIN CAJA DERECHA ENCABEZADO -->
+        </div>
             <div class="line"></div>
+            
+            <!-- COMIENZO FACTURA DE VENTA -->
             <div class="document-name">
                 <h1 style="display: block;">Factura de Venta</h1>
             </div>
-            <div class="customer-info">
+            <!-- FIN FACTURA DE VENTA -->
+            
+            <!-- COMIENZO IKE -->
+        <div class="row">
+            <div class="customer-info col-xs-12 col-sm-8 col-md-8 col-lg-8">
                 <p id="customer">IKE ASISTENCIA COLOMBIA</p>
                 <p>NIT. 900106251-3</p>
                 <p>Cll 93B 17 - 25 Piso 6</p>
@@ -43,11 +63,18 @@
                 <p>Bogotá</p>
                 <p>Colombia</p>
             </div>
-            <div class="invoice-info">
+            <!-- FIN IKE -->
+            
+            <!-- COMIENZO FECHA FACTURA -->
+            <div class="invoice-info col-xs-12 col-sm-4 col-md-4 col-lg-4">
                 <p>Número: 879</p>
                 <p>Fecha: 12/02/2016</p>
                 <p>Vencimiento: 12/03/2016</p>
             </div>
+            <!-- COMIENZO FECHA FACTURA -->
+        </div>
+            
+            <!-- COMIENZO DESCRIPCIÓN FACTURA -->
             <div class="invoice-items">
                 <table class="top-left">
                     <thead class="">
@@ -86,11 +113,18 @@
                     </tbody>
                 </table>
             </div>
-            <div class="invoice-notes">
+            <!-- FIN DESCRIPCIÓN FACTURA -->
+            
+        <div class="row">
+            <!-- COMIENZO LEYES -->
+            <div class="invoice-notes col-xs-12 col-sm-8 col-md-8 col-lg-8">
                 <p>Nos acogemos a los beneficios establecidos en la Ley 1429 de 2010. Favor no aplicar Retención en la Fuente.
-CONSIGNAR EN BANCOLOMBIA CUENTA DE AHORROS No. 20611685999 A NOMBRE DE MIGUEL URIBE MV S.A.S</p>
+                    CONSIGNAR EN BANCOLOMBIA CUENTA DE AHORROS No. 20611685999 A NOMBRE DE MIGUEL URIBE MV S.A.S</p>
             </div>
-            <div class="invoice-totals">
+            <!-- FIN LEYES -->
+            
+            <!-- COMIENZO SUBTOTAL -->
+            <div class="invoice-totals col-xs-12 col-sm-4 col-md-4 col-lg-4">
                 <table class="">
                     <tbody style="display: table-row-group;">
                         <tr>
@@ -132,6 +166,8 @@ CONSIGNAR EN BANCOLOMBIA CUENTA DE AHORROS No. 20611685999 A NOMBRE DE MIGUEL UR
                     </tbody>
                 </table>
             </div>
+            <!-- FIN SUBTOTAL -->
+        </div>
             <div class="custom-footer">
                 <p>RESOLUCION DIAN 320001302741 DEL 19 DE AGOSTO DE 2015. NUMERACIÓN AUTORIZADA POR COMPUTADOR 507 - 2000</p>
             </div>
