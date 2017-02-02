@@ -6,13 +6,12 @@
 body {
   background-color: #ccc;
   padding: 40px;
-  font-family: Quattrocento Sans;
-  line-height: 150%;
-  font-size: 100%;
   color: #4c4c4c;
 }
 h1 {
-  font-size: 200%;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: Arial, sans-serif;
   font-weight: bold;
 }
 #company,
@@ -37,26 +36,31 @@ h1 {
 .logo {
   width: 100%;
   padding: 10px;
-  font-size: 250%;
-  font-family: Open Sans;
+  font-size: 50px;
+  font-family: serif;
   font-size: 40px;
   font-weight: bold;
   border: none;
   line-height: 50px;
   text-align: left;
-  
   float: right;
   color: #e74f3a;
 }
 .custom-header {
   width: 100%;
   padding: 10px;
-  line-height: 125%;
-  font-size: 80%;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;  
+  color: #1a171b;
 }
 .company-info {
   text-align: right;
   padding: 10px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
 }
 .line {
   width: 100%;
