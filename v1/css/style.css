@@ -104,7 +104,6 @@ h1 {
 
 .invoice-items {
   text-align: left;
-  padding-bottom: 0px;
 }
 .invoice-totals {
   float:right;
@@ -122,7 +121,7 @@ h1 {
   font-size: 14px;
   color: #ffffff;
   background: #8f9193;
-  line-height: 30px;
+  line-height: 15px;
 }
 .invoice-items thead th.col-4{
   background:#e74f3a;
@@ -130,10 +129,17 @@ h1 {
 .invoice-items thead th.col-1{
   width:355px;
   padding-left: 15px;
+  text-align: left;
+  
 }
 .invoice-items  td.col-1{
   text-align: left;
+  width:355px;
 }
+table {
+    border-collapse: collapse;
+}
+
 .invoice-items thead th.col-2, 
 .invoice-items thead th.col-3,
 .invoice-items thead th.col-4{
@@ -189,20 +195,30 @@ h1 {
    padding-top: 10px;
 }
 	
-	table.width200,table.rwd_auto { width:100%;margin:0 0 10px 0}
+	table.width200,table.rwd_auto { width:100%;margin:0 0 10px 0;}
 		.width200 th,.rwd_auto th {background:#ccc;padding:5px; font-family: Arial, sans-serif; font-size: 14px; line-height: 15px;}
-		.width200 td,.rwd_auto td {border-bottom:1px;padding:5px;text-align:center; font-family: Arial, sans-serif; font-size: 12px; line-height: 14px;}
+		.width200 td,.rwd_auto  {padding: 15px; text-align:center; font-family: Arial, sans-serif; font-size: 12px; line-height: 14px;}
 		.width200 tr:last-child td, .rwd_auto tr:last-child td{border:0; }
-		
+
+        .invoice-items tbody  td {
+        padding-left: 15px;
+        margin-right: 10px;
+}
 	.rwd {width:100%;overflow:auto;}
 		.rwd table.rwd_auto {width:auto;min-width:100%}
-			.rwd_auto th,.rwd_auto td {white-space: nowrap;}
+			
 			
 	
 	
 	/* Smartphones (portrait and landscape) ----------- */
-   @media only screen and (max-width: 848px), (min-width: 848px) and (max-width: 320px)
+   @media only screen and (max-width: 848px), (min-width: 848px) and (max-width: 848px)
 	{
+        .rwd_auto th,.rwd_auto td {white-space: nowrap;}
+        .invoice-items tbody  td {
+        padding-left: 15px;
+        padding-right: 15px;    
+        margin-right: 10px;
+        }
         .top-left  {
           display: inline-flex;
           flex-wrap: nowrap;
@@ -242,7 +258,7 @@ h1 {
         
 	}
 
-@media only screen and (max-width: 830px), (min-width: 830px) and (max-width: 320px)
+@media only screen and (max-width: 830px), (min-width: 830px) and (max-width: 830px)
 	{
         .top-left  {
           display: flex;
@@ -324,6 +340,12 @@ h1 {
     }
 }
 	
-   
-  
+@media only screen and (max-width: 471px), (min-width: 471px) and (max-width: 471px) {
+ 
+    h1 {
+      font-size: 32px;
+      line-height: 30px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+    }
 }
