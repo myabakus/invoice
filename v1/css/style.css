@@ -6,17 +6,16 @@
 body {
   background-color: #ccc;
   padding: 40px;
+  font-family: Quattrocento Sans;
+  line-height: 150%;
+  font-size: 100%;
   color: #4c4c4c;
 }
 h1 {
-  font-size: 18px;
-  line-height: 20px;
-  font-family: Arial, sans-serif;
+  font-size: 200%;
   font-weight: bold;
 }
-h3 {
-    margin-bottom: 5px;
-}
+
 #company,
 #customer {
   font-size: 120%;
@@ -35,35 +34,27 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   width: 65%;
+   
 }
 .logo {
   width: 100%;
   padding: 10px;
-  font-size: 50px;
-  font-family: serif;
-  font-size: 40px;
-  font-weight: bold;
-  border: none;
-  line-height: 50px;
-  text-align: left;
-  float: right;
-  color: #e74f3a;
+  font-family: Paytone One;
+  font-size: 250%;
+  line-height: 40px;
+  padding-top: 0px;
 }
-.custom-header , .company-info {
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    line-height: 16px;
+.custom-header  {
+    width: 60%;
+    padding: 10px;
+    line-height: 125%;
+    font-size: 80%;   
 }
-.custom-header {
-  width: 100%;
-  padding: 10px;  
-  color: #1a171b;
-}
+
 .company-info {
   width: 35%;
   text-align: right;
-  padding: 20px;
-  font-weight: bold;
+  padding: 10px;
 }
 .line {
   width: 100%;
@@ -79,9 +70,6 @@ h3 {
 .customer-info {
   width: 65%;
   padding: 10px;
-  font-family: Arial, sans-serif;  
-  font-size: 14px;
-  line-height: 21px;
 }
 .invoice-info {
   width: 35%;
@@ -90,262 +78,156 @@ h3 {
 }
 .invoice-items {
   width: 100%;
-  padding-top: 60px;
-  margin-bottom: 30px;
+  padding: 10px;
 }
-
-strong {
-  font-weight: bold;
-}
-h1 {
-  font-size: 32px;
-  font-weight: bold;
-}
-
-.invoice-items {
-  text-align: left;
-}
-.invoice-totals {
-  float:right;
-  width:262px;
-  text-align: left;
-  padding-bottom: 30px;
-}
-.invoice-items table,
-.invoice-totals table {
+.invoice-items table {
   width: 100%;
-  font-size: 12px;
 }
-.invoice-items thead th{
-  font-weight: bold;
-  font-size: 14px;
-  color: #ffffff;
-  background: #8f9193;
-  line-height: 15px;
+.invoice-items thead th {
+  line-height: 30px;
 }
-.invoice-items thead th.col-4{
-  background:#e74f3a;
-}
-.invoice-items thead th.col-1{
-  width:355px;
-  padding-left: 15px;
+.col-1 {
   text-align: left;
-  
+  width: 450px;
 }
-.invoice-items  td.col-1{
-  text-align: left;
-  width:355px;
-}
-table {
-    border-collapse: collapse;
-}
-
-.invoice-items thead th.col-2, 
-.invoice-items thead th.col-3,
-.invoice-items thead th.col-4{
-  text-align:center;
-  padding-left: 5px;
-  padding-right: 5px;
-  width: 125px;
-}
-
-
-.invoice-totals tbody tr th {
-  padding-left: 15px;
-}
-.invoice-items tbody tr {
-  border-top:2px solid #ffffff;
-}
-
-.invoice-items tbody td {
-  padding-top: 15px;
-  padding-bottom: 25px;
-  background:#f0f1f1;
-}
-.invoice-items tbody td {
-  text-align: center;
-  vertical-align: middle;
-  font-weight: normal;
-  font-size:13px;
-}
-.invoice-totals tbody td {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-  vertical-align: middle;
-  width: 131px;
-  font-size:14px;
-}
-.invoice-totals tbody th {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 15px;
+.col-2 {
   text-align: right;
-  vertical-align: middle;
-  font-size:14px;
+  width: 30px;
 }
-
-.invoice-items tbody td:last-of-type{
-  background:#fde8de;
+.col-3 {
+  width: 80px;
+  text-align: right;
 }
-
+.col-4 {
+  width: 100px;
+  text-align: right;
+}
 
 .invoice-notes  {
    width: 60%;
-   padding-top: 10px;
+    padding: 10px;
 }
-	
-	table.width200,table.rwd_auto { width:100%;margin:0 0 10px 0;}
-		.width200 th,.rwd_auto th {background:#ccc;padding:5px; font-family: Arial, sans-serif; font-size: 14px; line-height: 15px;}
-		.width200 td,.rwd_auto  {padding: 15px; text-align:center; font-family: Arial, sans-serif; font-size: 12px; line-height: 14px;}
-		.width200 tr:last-child td, .rwd_auto tr:last-child td{border:0; }
+.invoice-totals {
+  width: 35%;
+  padding: 10px;
+  margin-left: 0px;
+  text-align: right;
+}
+.invoice-totals table {
+  float: right;
+}
+.invoice-totals th.col-3 {
+  padding-left:10px;
+    
+}
+.invoice-totals td.col-4 {
+  padding-left: 10px;
+}
+.custom-footer {
+  width: 100%;
+  padding: 10px;
+  font-size: 80%;
+}
 
-        .invoice-items tbody  td {
-        padding-left: 15px;
-        margin-right: 10px;
-}
-	.rwd {width:100%;overflow:auto;}
-		.rwd table.rwd_auto {width:auto;min-width:100%}
+ .rwd  {overflow:auto;}
 			
 			
 	
-	
-	/* Smartphones (portrait and landscape) ----------- */
-   @media only screen and (max-width: 848px), (min-width: 848px) and (max-width: 848px)
-	{
-        .rwd_auto th,.rwd_auto td {white-space: nowrap;}
-        .invoice-items tbody  td {
-        padding-left: 15px;
-        padding-right: 15px;    
-        margin-right: 10px;
-        }
-        .top-left  {
-          display: inline-flex;
-          flex-wrap: nowrap;
-          width: 100%;
-            }
-        .custom-header {
-            width: 50%;
-            text-align: left;
-        }
-        .company-info {
-              width: 100%;
-              text-align: center;
-              padding: 20px;
-              font-weight: bold;
-            }
-        .document-name {
-              width: 100%;
-              text-align: center;
-              padding-right: 20px;
-            }
-        .customer-info {
-          padding: 10px;
-          width: 50%;
-          text-align: left;
-                        }
-        .invoice-info {
-          width: 50%;
-          padding: 10px;
-          text-align: right;
-                        }
-        .invoice-notes  {
-            width: 50%;
-        }
-        .invoice-totals {
-            width: 50%;
-        }
-        
-	}
-
-@media only screen and (max-width: 830px), (min-width: 830px) and (max-width: 830px)
-	{
-        .top-left  {
-          display: flex;
-          flex-wrap: wrap;
-          width: 100%;
-            text-align: center;
-            }
-        .logo {
-            text-align: center;
-        }
-        .custom-header {
-            width: 100%;
-            text-align: center;
-        }
-        .company-info {
-              width: 100%;
-              text-align: center;
-              padding: 20px;
-              font-weight: bold;
-            }
-        .document-name {
-              width: 100%;
-              text-align: center;
-              padding-right: 20px;
-            }
-        .customer-info {
-          padding: 10px;
-          width: 50%;
-          text-align: left;
-                        }
-        .invoice-info {
-          width: 50%;
-          padding: 10px;
-          text-align: right;
-                        }
-        .invoice-notes, .invoice-totals  {
-            width: 50%;
-        }
-	}
-
-@media only screen and (max-width: 705px), (min-width: 705px) and (max-width: 705px)  
-	{
-	
-		table.width200, .width200 thead, .width200 tbody, .width200 th, .width200 td, .width200 tr { display: block; }
-		
-		.width200 thead tr { position: absolute;top: -9999px;left: -9999px; }
-		
-		.width200 tr { border: 1px solid #ccc; }
-		
-		.width200 td { border: none;border-bottom: 1px solid #ccc; position: relative;padding-left: 50%;text-align:left }
-		
-		.width200 td:before {  position: absolute; top: 6px; left: 6px; width: 45%; padding-right: 10px; white-space: nowrap;}
-		
-		.width200 td:nth-of-type(1):before { content: "Descripción"; }
-		.width200 td:nth-of-type(2):before { content: "Cant"; }
-		.width200 td:nth-of-type(3):before { content: "Precio"; }
-		.width200 td:nth-of-type(4):before { content: "Total"; }
-		
-		.descarto {display:none;}
-		.fontsize {font-size:10px}
-        .customer-info, .invoice-info {
-            width: 100%;
-            text-align: center;
-        }
-   
+	/*** querys **/
+@media all and (max-width: 914px) {
+    .invoice-notes  {
+   width: 100%;
+    padding: 10px;
 }
-@media only screen and (max-width: 630px), (min-width: 630px) and (max-width: 630px) {
-    .invoice-notes, .invoice-totals {
-        display: inline-flex;
-        flex-wrap: nowrap;
+    .invoice-totals {
+          width: 100%;
+        margin-left: -30px;
+        padding-left: 0px;
+        }
+
+}
+
+@media all and (max-width: 884px) {
+    .invoice-notes {
+          width: 100%;
+        }
+    .invoice-totals {
+          width: 95%;
+          margin-left: 40px;
+        }
+}
+
+@media all and (max-width: 690px) {
+    .top-left {
+        width: 100%;
     }
-    .invoice-notes   {
-            width: 100%;
-            align-content: center;
-        }
-    .invoice-totals, .custom-footer, .customer-info, .invoice-info {
+    .company-info {
         width: 100%;
         text-align: center;
     }
 }
-	
-@media only screen and (max-width: 471px), (min-width: 471px) and (max-width: 471px) {
- 
-    h1 {
-      font-size: 32px;
-      line-height: 30px;
-      font-family: Arial, sans-serif;
-      font-weight: bold;
-    }
+
+@media all and (max-width: 520px)
+	{
+        
+          .rwd td, th.col-4{
+          width: 100%;
+          padding: 6px;
+        }
+        .col-1 {
+          text-align: left;
+          min-width: 169px;
+        }
+        .top-left  {
+           flex-direction: column;
+           flex-wrap: nowrap;
+           width: 100%;
+            text-align: center;
+            }
+        .custom-header {
+            width: 100%;
+            text-align: center;
+        }
+        .company-info {
+              width: 100%;
+              text-align: center;
+              padding: 20px;
+            }
+        .document-name {
+              width: 100%;
+              text-align: center;
+              padding-right: 20px;
+            }
+        .invoice-info {
+            width: 100%;
+            text-align: center;
+        }
+        .invoice-notes, .invoice-totals {
+            width: 100%;
+            display: inline-flex;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+        }
+        .invoice-totals {
+          width: 100%;
+           padding: 10px;
+           margin-right: -10px;
+          
+        }
+        
+        h1 {
+          font-size: 200%;
+          font-weight: bold;
+        }
+        
+	}
+@media all and (max-width: 320px) {
+   .invoice-totals {
+          width: 100%;
+          padding: 10px;
+           margin: 10px;
+          
+        }
+    
 }
+
