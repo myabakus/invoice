@@ -110,7 +110,6 @@ h1 {
 .invoice-totals {
   width: 35%;
   padding: 10px;
-  margin-left: 0px;
   text-align: right;
 }
 .invoice-totals table {
@@ -134,18 +133,19 @@ h1 {
 			
 	
 	/*** querys **/
+
 @media all and (max-width: 914px) {
-    .invoice-notes  {
-   width: 100%;
+    .invoice-items, .invoice-notes  {
+   width: 100% auto;
     padding: 10px;
 }
     .invoice-totals {
-          width: 100%;
-        margin-left: -30px;
-        padding-left: 0px;
+          width: 95%;
+          margin-left: 40px;
         }
 
 }
+
 
 @media all and (max-width: 884px) {
     .invoice-notes {
@@ -221,6 +221,20 @@ h1 {
         }
         
 	}
+@media all and (max-width: 414px) {
+    .invoice-totals {
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+    }
+}
+@media all and (max-width: 360px) {
+    .invoice-totals {
+        width: 100%;
+        padding: 0px;
+        margin: 10px;
+    }
+}
 @media all and (max-width: 320px) {
    .invoice-totals {
           width: 100%;
