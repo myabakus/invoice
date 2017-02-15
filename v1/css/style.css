@@ -122,6 +122,24 @@ h1 {
 .invoice-totals td.col-4 {
   padding-left: 10px;
 }
+.firmas1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px;
+    float: right;
+    max-width: 50%;
+}
+.firmas2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin: 10px;
+    float: right;
+    max-width: 40%;
+}
 .custom-footer {
   width: 100%;
   padding: 10px;
@@ -155,6 +173,7 @@ h1 {
           width: 95%;
           margin-left: 40px;
         }
+    
 }
 
 @media all and (max-width: 690px) {
@@ -164,6 +183,24 @@ h1 {
     .company-info {
         width: 100%;
         text-align: center;
+    }
+    
+}
+
+@media all and (max-width: 860px) {
+    .firmas1 {
+        flex-direction: column;
+        text-align: center;
+        max-width: 100%;
+        overflow: hidden;
+        
+    }
+    .firmas2  {
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+    overflow: hidden;
+    
     }
 }
 
