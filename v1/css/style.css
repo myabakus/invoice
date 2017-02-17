@@ -108,11 +108,11 @@ h1 {
 }
 
 .invoice-notes  {
-   width: 65%;
+   width: 61%;
     padding: 10px;
 }
 .invoice-totals {
-  width: 35%;
+  width: 39%;
   padding: 10px;
   text-align: right;
 }
@@ -120,7 +120,7 @@ h1 {
   float: right;
 }
 .invoice-totals th.col-3 {
-  padding-right:3px;
+  padding-right:5px;
     
 }
 .invoice-totals td.col-4 {
