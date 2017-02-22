@@ -157,7 +157,7 @@ h1 {
 	
 	/*** querys **/
 
-@media all and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .invoice-items, .invoice-notes  {
    width: 100% auto;
     padding: 10px;
@@ -170,7 +170,7 @@ h1 {
 }
 
 
-@media all and (max-width: 630px) {
+@media screen and (max-width: 630px) {
     .invoice-notes {
           width: 100%;
         }
@@ -181,7 +181,7 @@ h1 {
     
 }
 
-@media all and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .top-left {
         width: 100%;
     }
@@ -192,7 +192,7 @@ h1 {
     
 }
 
-@media all and (max-width: 835px) {
+@media screen and (max-width: 835px) {
     .firmas1 {
         flex-direction: column;
         text-align: center;
@@ -209,7 +209,7 @@ h1 {
     }
 }
 
-@media all and (max-width: 520px)
+@media screen and (max-width: 520px)
 	{
         
           .rwd td, th.col-4{
@@ -263,21 +263,21 @@ h1 {
         }
         
 	}
-@media all and (max-width: 414px) {
+@media screen and (max-width: 414px) {
     .invoice-totals {
         width: 100%;
         padding: 10px;
         margin: 10px;
     }
 }
-@media all and (max-width: 360px) {
+@media screen and (max-width: 360px) {
     .invoice-totals {
         width: 100%;
         padding: 0px;
         margin: 10px;
     }
 }
-@media all and (max-width: 320px) {
+@media screen and (max-width: 320px) {
    .invoice-totals {
           width: 100%;
           padding: 10px;
