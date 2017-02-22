@@ -15,7 +15,7 @@
         margin-top: -60px;
     }
     .firmas1, .firmas2 {
-        page-break-before: auto;
+        page-break-before: always;
     }
    
 }
