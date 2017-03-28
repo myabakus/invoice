@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>Invoice</title>
-        <link href="css/style.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/print.css" media="print">
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Quattrocento+Sans">
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Paytone+One">
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato">
-    </head>
-    <body>
-        <div class="invoice">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Invoice big</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Quattrocento+Sans">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Paytone+One">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato">
+</head>
+
+<body>
+    <div class="invoice">
+        <div class="usuario">
             <div class="top-left">
                 <div class="logo">
-                  Miguel Uribe MV S.A.S
-                </div>  
+                    Miguel Uribe MV S.A.S
+                </div>
                 <div class="custom-header">
                     <p>ACTIVIDAD ECONÓMICA 7500</p>
                     <p>TARIFA. ICA 9.66X1000</p>
@@ -36,10 +39,14 @@
                 <p>Bogotá</p>
                 <p>Colombia</p>
             </div>
-            <div class="line"></div>
+        </div>
+        <div class="line"></div>
+        <!--
             <div class="document-name">
                 <h1 style="display: block;">Factura de Venta</h1>
             </div>
+-->
+        <div class="padreDos">
             <div class="customer-info">
                 <p id="customer">IKE ASISTENCIA COLOMBIA</p>
                 <p>NIT. 900106251-3</p>
@@ -50,152 +57,194 @@
                 <p>Colombia</p>
             </div>
             <div class="invoice-info">
+                <h1 style="display: block;">Factura de Venta</h1>
                 <p>Número: 1606</p>
                 <p>Fecha: 14/02/2017</p>
                 <p>Vencimiento: 16/02/2017</p>
                 <p>Referencia: Banco Popular</p>
             </div>
-            <div class="invoice-items rwd">
-                <table class="top-left rwd_auto">
-                    <thead class="">
-                        <tr class="">
-                            <th class="col-1">Descripción</th>
-                            <th class="col-2">Cant</th>
-                            <th class="col-3">Precio</th>
-                            <th class="col-4">Total</th>
-                        </tr>
-                    </thead>
-                    <tbody class="">
-                        <tr class="">
-                            <td class="col-1">Consultoria médico veterinaria presencial<p>Hablar para consultas médicas veterinarias</p></td>
-                            <td class="col-2">4</td>
-                            <td class="col-3">15.000</td>
-                            <td class="col-4">60.000,0</td>
-                        </tr>
-                        <tr class="">
-                            <td class="col-1">Hablar para consultas médicas veterinarias<p>Tener una reunión con el Dr para ver a la mascota</p></td>
-                            <td class="col-2">2</td>
-                            <td class="col-3">85.000</td>
-                            <td class="col-4">170.000,0</td>
-                        </tr>
-                        <tr class="">
-                            <td class="col-1">Acupuntura Veterinaria <p>dejar a tu mascota como nueva</p></td>
-                            <td class="col-2">1</td>
-                            <td class="col-3">100.000</td>
-                            <td class="col-4">100.000,0</td>
-                        </tr>
-                        <tr class="">
-                            <td class="col-1">Anestesia de Pequeños Animales<p>Dormir al animal</p></td>
-                            <td class="col-2">1</td>
-                            <td class="col-3">50.000</td>
-                            <td class="col-4">50.000,0</td>
-                        </tr>
-                        <tr class="">
-                            <td class="col-1">Chequeo del corazón <p>Cualquier tipo de cirugía</p></td>
-                            <td class="col-2">1</td>
-                            <td class="col-3">150.000</td>
-                            <td class="col-4">150.000,0</td>
-                        </tr>
-                        <tr class="">
-                            <td class="col-1">Cirugía Veterinaria de Animales Pequeños<p>Cirugía en tejidos blandos</p></td>
-                            <td class="col-2">1</td>
-                            <td class="col-3">200.000</td>
-                            <td class="col-4">200.000,0</td>
-                        </tr>
-                        <tr class="">
-                            <td class="col-1">Cirugía Veterinaria de tejidos blandos<p>Cirugía en tejidos blandos</p></td>
-                            <td class="col-2">1</td>
-                            <td class="col-3">200.000</td>
-                            <td class="col-4">200.000,0</td>
-                        </tr>
-                          <tr class="">
-                            <td class="col-1">Clínica de Comportamiento Animal<p>Exploración o examen visual de las cavidades o los conductos internos del cuerpo mediante un endoscopio.</p></td>
-                            <td class="col-2">1</td>
-                            <td class="col-3">200.000</td>
-                            <td class="col-4">200.000,0</td>
-                        </tr>
-                        <tr class="">
-                            <td class="col-1">Dermatología Veterinaria<p>Estudios de la piel del animal</p></td>
-                            <td class="col-2">1</td>
-                            <td class="col-3">50.000</td>
-                            <td class="col-4">50.000,0</td>
-                        </tr>
-                        <tr class="">
-                            <td class="col-1">Endocrinología Veterinaria<p>Parte de la medicina que estudia la anatomía, las funciones y las alteraciones de las glándulas endocrinas.</p></td>
-                            <td class="col-2">1</td>
-                            <td class="col-3">50.000</td>
-                            <td class="col-4">50.000,0</td>
-                        </tr>
-                        <tr class="">
-                            <td class="col-1">Endoscopia Veterinaria <p>Exploración o examen visual de las cavidades o los conductos internos del cuerpo mediante un endoscopio.</p></td>
-                            <td class="col-2">1</td>
-                            <td class="col-3">150.000</td>
-                            <td class="col-4">150.000,0</td>
-                        </tr>
-                        <tr class="">
-                            <td class="col-1">Endoscopia y Gastroenterologia Veterinaria<p>es la especialidad médica que se ocupa de las enfermedades del aparato digestivo y órganos asociados</p></td>
-                            <td class="col-2">1</td>
-                            <td class="col-3">200.000</td>
-                            <td class="col-4">200.000,0</td>
-                        </tr>
-                        
-                        <tr class="">
-                            <td class="col-1">Etología Veterinaria<p>Estudio clinico del comportamiento animal.</p></td>
-                            <td class="col-2">1</td>
-                            <td class="col-3">300.000</td>
-                            <td class="col-4">300.000,0</td>
-                        </tr>
-                        
-                        <tr class="">
-                            <td class="col-1">Fisioterapia y Rehabilitación Veterinaria<p>es una disciplina de la Salud que ofrece una alternativa terapéutica</p></td>
-                            <td class="col-2">1</td>
-                            <td class="col-3">300.000</td>
-                            <td class="col-4">300.000,0</td>
-                        </tr>
-                        <tr class="">
-                            <td class="col-1">Gastroenterología Veterinaria<p>especialidad médica que se ocupa de las enfermedades del aparato digestivo y órganos asociados</p></td>
-                            <td class="col-2">1</td>
-                            <td class="col-3">125.000</td>
-                            <td class="col-4">125.000,0</td>
-                        </tr>
-                        
-                        <tr class="">
-                            <td class="col-1">Homeopatía Veterinaria<p>Método curativo de algunas enfermedades que se fundamenta en la aplicación de pequeñas cantidades de sustancias que, si se aplicaran en grandes proporciones a un individuo sano, producirían los mismos síntomas que se pretenden combatir.</p></td>
-                            <td class="col-2">10</td>
-                            <td class="col-3">150.000</td>
-                            <td class="col-4">150.000,0</td>
-                        </tr>
-                        <tr class="">
-                            <td class="col-1">Medicina del Comportamiento Animal<p>Estudiar el comportamiento animal</p></td>
-                            <td class="col-2">10</td>
-                            <td class="col-3">150.000</td>
-                            <td class="col-4">150.000,0</td>
-                        </tr>
-                        <tr class="">
-                            <td class="col-1">Nefrología y Urología Veterinaria<p>Parte de la medicina que se ocupa de la anatomía, la fisiología y las enfermedades del riñón.</p></td>
-                            <td class="col-2">1</td>
-                            <td class="col-3">190.000</td>
-                            <td class="col-4">190.000,0</td>
-                        </tr>
-                        <tr class="">
-                            <td class="col-1">Neonatología y Pediatría Veterinaria<p>Parte de la pediatría que se ocupa del estudio y la asistencia de los recién nacidos.</p></td>
-                            <td class="col-2">1</td>
-                            <td class="col-3">300.000</td>
-                            <td class="col-4">300.000,0</td>
-                        </tr>
-                        <tr class="">
-                            <td class="col-1">Nutrición Animal<p>Conjunto de procesos, hábitos, etc., relacionados con la alimentación animal.</p></td>
-                            <td class="col-2">1</td>
-                            <td class="col-3">250.000</td>
-                            <td class="col-4">250.000,0</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        </div>
+        <div class="invoice-items rwd">
+            <table class="top-left rwd_auto">
+                <thead class="">
+                    <tr class="">
+                        <th class="col-1">Descripción</th>
+                        <th class="col-2">Cant</th>
+                        <th class="col-3">Precio</th>
+                        <th class="col-4">Total</th>
+                    </tr>
+                </thead>
+                <tbody class="">
+                    <tr class="">
+                        <td class="col-1">Consultoria médico veterinaria presencial
+                            <p>Hablar para consultas médicas veterinarias</p>
+                        </td>
+                        <td class="col-2">4</td>
+                        <td class="col-3">15.000</td>
+                        <td class="col-4">60.000,0</td>
+                    </tr>
+                    <tr class="">
+                        <td class="col-1">Hablar para consultas médicas veterinarias
+                            <p>Tener una reunión con el Dr para ver a la mascota</p>
+                        </td>
+                        <td class="col-2">2</td>
+                        <td class="col-3">85.000</td>
+                        <td class="col-4">170.000,0</td>
+                    </tr>
+                    <tr class="">
+                        <td class="col-1">Acupuntura Veterinaria
+                            <p>dejar a tu mascota como nueva</p>
+                        </td>
+                        <td class="col-2">1</td>
+                        <td class="col-3">100.000</td>
+                        <td class="col-4">100.000,0</td>
+                    </tr>
+                    <tr class="">
+                        <td class="col-1">Anestesia de Pequeños Animales
+                            <p>Dormir al animal</p>
+                        </td>
+                        <td class="col-2">1</td>
+                        <td class="col-3">50.000</td>
+                        <td class="col-4">50.000,0</td>
+                    </tr>
+                    <tr class="">
+                        <td class="col-1">Chequeo del corazón
+                            <p>Cualquier tipo de cirugía</p>
+                        </td>
+                        <td class="col-2">1</td>
+                        <td class="col-3">150.000</td>
+                        <td class="col-4">150.000,0</td>
+                    </tr>
+                    <tr class="">
+                        <td class="col-1">Cirugía Veterinaria de Animales Pequeños
+                            <p>Cirugía en tejidos blandos</p>
+                        </td>
+                        <td class="col-2">1</td>
+                        <td class="col-3">200.000</td>
+                        <td class="col-4">200.000,0</td>
+                    </tr>
+                    <tr class="">
+                        <td class="col-1">Cirugía Veterinaria de tejidos blandos
+                            <p>Cirugía en tejidos blandos</p>
+                        </td>
+                        <td class="col-2">1</td>
+                        <td class="col-3">200.000</td>
+                        <td class="col-4">200.000,0</td>
+                    </tr>
+                    <tr class="">
+                        <td class="col-1">Clínica de Comportamiento Animal
+                            <p>Exploración o examen visual de las cavidades o los conductos internos del cuerpo mediante un endoscopio.</p>
+                        </td>
+                        <td class="col-2">1</td>
+                        <td class="col-3">200.000</td>
+                        <td class="col-4">200.000,0</td>
+                    </tr>
+                    <tr class="">
+                        <td class="col-1">Dermatología Veterinaria
+                            <p>Estudios de la piel del animal</p>
+                        </td>
+                        <td class="col-2">1</td>
+                        <td class="col-3">50.000</td>
+                        <td class="col-4">50.000,0</td>
+                    </tr>
+                    <tr class="">
+                        <td class="col-1">Endocrinología Veterinaria
+                            <p>Parte de la medicina que estudia la anatomía, las funciones y las alteraciones de las glándulas endocrinas.</p>
+                        </td>
+                        <td class="col-2">1</td>
+                        <td class="col-3">50.000</td>
+                        <td class="col-4">50.000,0</td>
+                    </tr>
+                    <tr class="">
+                        <td class="col-1">Endoscopia Veterinaria
+                            <p>Exploración o examen visual de las cavidades o los conductos internos del cuerpo mediante un endoscopio.</p>
+                        </td>
+                        <td class="col-2">1</td>
+                        <td class="col-3">150.000</td>
+                        <td class="col-4">150.000,0</td>
+                    </tr>
+                    <tr class="">
+                        <td class="col-1">Endoscopia y Gastroenterologia Veterinaria
+                            <p>es la especialidad médica que se ocupa de las enfermedades del aparato digestivo y órganos asociados</p>
+                        </td>
+                        <td class="col-2">1</td>
+                        <td class="col-3">200.000</td>
+                        <td class="col-4">200.000,0</td>
+                    </tr>
+
+                    <tr class="">
+                        <td class="col-1">Etología Veterinaria
+                            <p>Estudio clinico del comportamiento animal.</p>
+                        </td>
+                        <td class="col-2">1</td>
+                        <td class="col-3">300.000</td>
+                        <td class="col-4">300.000,0</td>
+                    </tr>
+
+                    <tr class="">
+                        <td class="col-1">Fisioterapia y Rehabilitación Veterinaria
+                            <p>es una disciplina de la Salud que ofrece una alternativa terapéutica</p>
+                        </td>
+                        <td class="col-2">1</td>
+                        <td class="col-3">300.000</td>
+                        <td class="col-4">300.000,0</td>
+                    </tr>
+                    <tr class="">
+                        <td class="col-1">Gastroenterología Veterinaria
+                            <p>especialidad médica que se ocupa de las enfermedades del aparato digestivo y órganos asociados</p>
+                        </td>
+                        <td class="col-2">1</td>
+                        <td class="col-3">125.000</td>
+                        <td class="col-4">125.000,0</td>
+                    </tr>
+
+                    <tr class="">
+                        <td class="col-1">Homeopatía Veterinaria
+                            <p>Método curativo de algunas enfermedades que se fundamenta en la aplicación de pequeñas cantidades de sustancias que, si se aplicaran en grandes proporciones a un individuo sano, producirían los mismos síntomas que se pretenden combatir.</p>
+                        </td>
+                        <td class="col-2">10</td>
+                        <td class="col-3">150.000</td>
+                        <td class="col-4">150.000,0</td>
+                    </tr>
+                    <tr class="">
+                        <td class="col-1">Medicina del Comportamiento Animal
+                            <p>Estudiar el comportamiento animal</p>
+                        </td>
+                        <td class="col-2">10</td>
+                        <td class="col-3">150.000</td>
+                        <td class="col-4">150.000,0</td>
+                    </tr>
+                    <tr class="">
+                        <td class="col-1">Nefrología y Urología Veterinaria
+                            <p>Parte de la medicina que se ocupa de la anatomía, la fisiología y las enfermedades del riñón.</p>
+                        </td>
+                        <td class="col-2">1</td>
+                        <td class="col-3">190.000</td>
+                        <td class="col-4">190.000,0</td>
+                    </tr>
+                    <tr class="">
+                        <td class="col-1">Neonatología y Pediatría Veterinaria
+                            <p>Parte de la pediatría que se ocupa del estudio y la asistencia de los recién nacidos.</p>
+                        </td>
+                        <td class="col-2">1</td>
+                        <td class="col-3">300.000</td>
+                        <td class="col-4">300.000,0</td>
+                    </tr>
+                    <tr class="">
+                        <td class="col-1">Nutrición Animal
+                            <p>Conjunto de procesos, hábitos, etc., relacionados con la alimentación animal.</p>
+                        </td>
+                        <td class="col-2">1</td>
+                        <td class="col-3">250.000</td>
+                        <td class="col-4">250.000,0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="padreFlex">
             <div class="invoice-notes">
-               <p>Nota</p>
-                <p>Nos acogemos a los beneficios establecidos en la Ley 1429 de 2010. Favor no aplicar Retención en la Fuente. 
-CONSIGNAR EN BANCOLOMBIA CUENTA DE AHORROS No. 20611685999 A NOMBRE DE MIGUEL URIBE MV S.A.S</p>
+                <p>Nota</p>
+                <p>Nos acogemos a los beneficios establecidos en la Ley 1429 de 2010. Favor no aplicar Retención en la Fuente. CONSIGNAR EN BANCOLOMBIA CUENTA DE AHORROS No. 20611685999 A NOMBRE DE MIGUEL URIBE MV S.A.S</p>
             </div>
             <div class="invoice-totals">
                 <table class="">
@@ -224,7 +273,7 @@ CONSIGNAR EN BANCOLOMBIA CUENTA DE AHORROS No. 20611685999 A NOMBRE DE MIGUEL UR
                             <th class="col-3">-Rete ICA 0.966%<br></th>
                             <td class="col-4">38.881,50</td>
                         </tr>
-                        
+
                         <tr style="display: table-row;">
                             <th class="col-3">Saldo<br></th>
                             <td class="col-4">4.475.156,0</td>
@@ -232,18 +281,21 @@ CONSIGNAR EN BANCOLOMBIA CUENTA DE AHORROS No. 20611685999 A NOMBRE DE MIGUEL UR
                     </tbody>
                 </table>
             </div>
+        </div>
+        <div class="totalFirmas">
             <div class="firmas1">
-               <p>____________________________________________</p>
-                <p>Elaborado por</p>
+                <p class="lineaA">____________________________________________</p>
+                <p class="pFirma">Elaborado por</p>
             </div>
-             <div class="firmas2">
-                <p>___________________________________________</p>
-                <p>Aceptado, Firma y/o Sello</p>
-            </div>
-            <div class="custom-footer">
-                <p>RESOLUCION DIAN 320001302741 DEL 19 DE AGOSTO DE 2015. NUMERACIÓN AUTORIZADA POR COMPUTADOR 507 - 2000</p>
+            <div class="firmas2">
+                <p class="lineaA">___________________________________________</p>
+                <p class="pFirma">Aceptado, Firma y/o Sello</p>
             </div>
         </div>
-    </body>
-</html>
+        <div class="custom-footer">
+            <p>RESOLUCION DIAN 320001302741 DEL 19 DE AGOSTO DE 2015. NUMERACIÓN AUTORIZADA POR COMPUTADOR 507 - 2000</p>
+        </div>
+    </div>
+</body>
 
+</html>
