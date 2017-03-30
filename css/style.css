@@ -28,6 +28,35 @@ h1 {
     line-height: 30px;
 }
 
+.invoice-datos {
+    padding-top: 10px;
+}
+
+.invoice-ike {
+    padding-top: 12px;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.sinSalto {
+    float: right;
+    margin-top: -24px;
+}
+
+.sinSalto1 {
+    margin-right: 69px;
+}
+
+.sinSalto2 {
+    margin-right: 25px;
+}
+
+.sinSalto3 {
+    margin-right: 22px;
+}
+
 #company,
 #customer {
     font-size: 120%;
@@ -80,8 +109,9 @@ h1 {
 }
 
 .customer-info {
-    width: 35%;
+    width: 36%;
     padding: 10px;
+    padding-top: 14px;
 }
 
 .invoice-info {
@@ -89,6 +119,7 @@ h1 {
     text-align: left;
     padding-left: 120px;
     margin-left: 90px;
+    padding-top: 10px;
 }
 
 .padreDos {
@@ -252,7 +283,7 @@ h1 {
     }
 }
 
-@media screen and (max-width: 767px) and (min-width: 415px) {
+@media screen and (max-width: 790px) and (min-width: 415px) {
     .usuario {
         display: flex;
         flex-direction: row;
@@ -265,20 +296,53 @@ h1 {
     h1 {
         line-height: 30px;
     }
-    .customer-info {
-        width: 100%;
-        text-align: center;
-        margin-left: auto;
-        margin-right:auto; 
+    
+    p.negrita1 {
+        margin-right: 50px;
+    }
+    p.negrita2 {
+        margin-right: 68px;
+    }
+    p.negrita3 {
+        margin-right: 20px;
+    }
+    p.negrita4 {
+        margin-right: 35px;
+    }
+    .negrita {
+        margin-right: 99px;
+    }
+    .sinSalto1 {
+        margin-right: -39px;
+    }
+    .sinSalto2 {
+        margin-right: -85px;
+    }
+    .sinSalto3 {
+        margin-right: -89px;
+    }
+    .sinSalto4 {
+        margin-right: -109px;
+    }
+    .invoice-datos {
+        margin-right: -53px;
+        padding-right: 170px;
     }
     .invoice-info {
         width: 100%;
         text-align: center;
         margin-left: auto;
-        margin-right:auto;
+        margin-right: auto;
         padding-right: 10px;
         padding-left: 10px;
     }
+    .customer-info {
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
     .padreDos {
         display: flex;
         flex-direction: column-reverse;
@@ -288,7 +352,7 @@ h1 {
         align-content: stretch;
         text-align: center;
         margin-left: auto;
-        margin-right:auto;
+        margin-right: auto;
     }
     .padreFlex {
         display: flex;
@@ -334,6 +398,37 @@ h1 {
         width: 100%;
         text-align: center;
         padding: 20px;
+    }
+    p.negrita1 {
+        margin-right: 50px;
+    }
+    p.negrita2 {
+        margin-right: 68px;
+    }
+    p.negrita3 {
+        margin-right: 20px;
+    }
+    p.negrita4 {
+        margin-right: 35px;
+    }
+    .negrita {
+        margin-right: 99px;
+    }
+    .sinSalto1 {
+        margin-right: -39px;
+    }
+    .sinSalto2 {
+        margin-right: -81px;
+    }
+    .sinSalto3 {
+        margin-right: -84px;
+    }
+    .sinSalto4 {
+        margin-right: -107px;
+    }
+    .invoice-datos {
+        margin-right: 45px;
+        padding-right: 70px;
     }
     h1 {
         font-size: 200%;
