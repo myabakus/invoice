@@ -225,10 +225,6 @@ h1 {
     align-content: stretch;
 }
 
-.lineaB {
-    display: none;
-}
-
 .custom-footer {
     width: 100%;
     padding: 10px;
@@ -296,7 +292,6 @@ h1 {
     h1 {
         line-height: 30px;
     }
-    
     p.negrita1 {
         margin-right: 50px;
     }
@@ -342,7 +337,6 @@ h1 {
         margin-left: auto;
         margin-right: auto;
     }
-    
     .padreDos {
         display: flex;
         flex-direction: column-reverse;
@@ -382,6 +376,18 @@ h1 {
 }
 
 @media screen and (max-width: 603px) and (min-width: 415px) {
+    .invoice {
+        margin: -35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        align-content: center;
+        
+        background-color: #ffffff;
+        max-width: auto;
+        padding: 20px 0px;
+    }
     .usuario {
         display: flex;
         flex-direction: column;
@@ -393,7 +399,8 @@ h1 {
         text-align: center;
         padding-left: 0px;
     }
-    .company-info,  .top-left div {
+    .company-info,
+    .top-left div {
         width: 100%;
         text-align: center;
         padding-left: 0px;
@@ -402,7 +409,6 @@ h1 {
     h1 {
         line-height: 30px;
     }
-    
     p.negrita1 {
         margin-right: 50px;
     }
@@ -448,7 +454,6 @@ h1 {
         margin-left: auto;
         margin-right: auto;
     }
-    
     .padreDos {
         display: flex;
         flex-direction: column-reverse;
@@ -488,6 +493,19 @@ h1 {
 }
 
 @media screen and (max-width: 414px) and (min-width: 321px) {
+    .invoice {
+        margin: -35px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: center;
+        text-align: center;
+        background-color: #ffffff;
+        max-width: auto;
+        padding: 20px 0px;
+    }
     .usuario {
         display: flex;
         flex-direction: row;
@@ -560,7 +578,6 @@ h1 {
         justify-content: center;
         align-items: center;
         align-content: center;
-        
     }
     .rwd td,
     th.col-4 {
@@ -596,10 +613,28 @@ h1 {
 }
 
 @media screen and (max-width: 320px) and (min-width: 0px) {
-    .custom-header {
-        width: 100%;
+   
+    .invoice {
+        margin: -35px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: center;
         text-align: center;
-        padding-left: 40px;
+        background-color: #ffffff;
+        max-width: auto;
+        padding: 10px 0px;
+    }
+    .logo {
+       margin-left: 70px;
+    }
+    .custom-header {
+        width: auto;
+        text-align: center;
+        padding-left: 100px;
+        
     }
     .company-info {
         width: 100%;
