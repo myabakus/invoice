@@ -283,7 +283,7 @@ h1 {
     }
 }
 
-@media screen and (max-width: 790px) and (min-width: 415px) {
+@media screen and (max-width: 790px) and (min-width: 604px) {
     .usuario {
         display: flex;
         flex-direction: row;
@@ -292,6 +292,112 @@ h1 {
         align-items: stretch;
         align-content: stretch;
         word-wrap: break-word;
+    }
+    h1 {
+        line-height: 30px;
+    }
+    
+    p.negrita1 {
+        margin-right: 50px;
+    }
+    p.negrita2 {
+        margin-right: 68px;
+    }
+    p.negrita3 {
+        margin-right: 20px;
+    }
+    p.negrita4 {
+        margin-right: 35px;
+    }
+    .negrita {
+        margin-right: 99px;
+    }
+    .sinSalto1 {
+        margin-right: -39px;
+    }
+    .sinSalto2 {
+        margin-right: -85px;
+    }
+    .sinSalto3 {
+        margin-right: -89px;
+    }
+    .sinSalto4 {
+        margin-right: -109px;
+    }
+    .invoice-datos {
+        margin-right: -53px;
+        padding-right: 170px;
+    }
+    .invoice-info {
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .customer-info {
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .padreDos {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: stretch;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .padreFlex {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: space-between;
+    }
+    .invoice-notes {
+        width: 100%;
+    }
+    .invoice-totals {
+        width: 95%;
+        margin-left: 40px;
+    }
+    .totalFirmas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        word-wrap: break-word;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 603px) and (min-width: 415px) {
+    .usuario {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        text-align: center;
+        padding-left: 0px;
+    }
+    .company-info,  .top-left div {
+        width: 100%;
+        text-align: center;
+        padding-left: 0px;
+        margin: 0px;
     }
     h1 {
         line-height: 30px;
@@ -454,6 +560,7 @@ h1 {
         justify-content: center;
         align-items: center;
         align-content: center;
+        
     }
     .rwd td,
     th.col-4 {
