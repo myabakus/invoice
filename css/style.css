@@ -1,705 +1,115 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 body {
-    background-color: #ccc;
-    padding: 40px;
-    font-family: Quattrocento Sans;
-    line-height: 150%;
-    font-size: 100%;
-    color: #4c4c4c;
+  background-color: #ccc;
+  padding: 40px;
+  font-family: Quattrocento Sans;
+  line-height: 150%;
+  font-size: 100%;
+  color: #4c4c4c;
 }
-
-.usuario {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
-    align-content: stretch;
-}
-
 h1 {
-    font-size: 200%;
-    font-weight: bold;
-    line-height: 30px;
+  font-size: 200%;
+  font-weight: bold;
 }
-
-.invoice-datos {
-    padding-top: 10px;
-}
-
-.invoice-ike {
-    padding-top: 12px;
-}
-
-.negrita {
-    font-weight: bold;
-}
-
-.sinSalto {
-    float: right;
-    margin-top: -24px;
-}
-
-.sinSalto1 {
-    margin-right: 69px;
-}
-
-.sinSalto2 {
-    margin-right: 25px;
-}
-
-.sinSalto3 {
-    margin-right: 22px;
-}
-
 #company,
 #customer {
-    font-size: 120%;
-    font-weight: bold;
+  font-size: 120%;
+  font-weight: bold;
 }
-
 .invoice {
-    display: flex;
-    flex-flow: row wrap;
-    background-color: #ffffff;
-    max-width: 820px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 55px 45px;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #ffffff;
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 55px 45px;
 }
-
 .top-left {
-    display: flex;
-    flex-wrap: wrap;
-    width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 65%;
 }
-
 .logo {
-    width: 100%;
-    padding: 10px;
-    font-family: Paytone One;
-    font-size: 250%;
-    line-height: 40px;
-    padding-top: 0px;
+  width: 100%;
+  padding: 10px;
+  font-family: Paytone One;
+  font-size: 250%;
 }
-
 .custom-header {
-    width: 60%;
-    padding: 10px;
-    line-height: 125%;
-    font-size: 80%;
+  width: 100%;
+  padding: 10px;
+  line-height: 125%;
+  font-size: 80%;
 }
-
 .company-info {
-    width: 35%;
-    text-align: right;
-    padding: 10px;
+  width: 35%;
+  text-align: right;
+  padding: 10px;
 }
-
 .line {
-    width: 100%;
-    border: solid 1px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  width: 100%;
+  border: solid 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-
+.document-name {
+  width: 100%;
+  text-align: right;
+  padding: 10px;
+}
 .customer-info {
-    width: 36%;
-    padding: 10px;
-    padding-top: 14px;
+  width: 65%;
+  padding: 10px;
 }
-
 .invoice-info {
-    width: 50%;
-    text-align: left;
-    padding-left: 120px;
-    margin-left: 90px;
-    padding-top: 10px;
+  width: 35%;
+  padding: 10px;
+  text-align: right;
 }
-
-.padreDos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: stretch;
-    align-content: stretch;
-}
-
 .invoice-items {
-    width: 100%;
-    padding: 10px;
+  width: 100%;
+  padding: 10px;
 }
-
 .invoice-items table {
-    width: 100%;
+  width: 100%;
 }
-
 .invoice-items thead th {
-    line-height: 30px;
+  line-height: 30px;
 }
-
 .col-1 {
-    text-align: left;
-    width: 450px;
+  text-align: left;
+  width: 450px;
 }
-
 .col-2 {
-    text-align: right;
-    width: 30px;
+  text-align: right;
+  width: 30px;
 }
-
 .col-3 {
-    width: 100px;
-    text-align: right;
+  width: 80px;
+  text-align: right;
 }
-
-.invoice-totals .col-3 {
-    width: 0px;
-    text-align: right;
-}
-
 .col-4 {
-    width: 100px;
-    text-align: right;
+  width: 100px;
+  text-align: right;
 }
-
-.padreFlex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: space-between;
-}
-
 .invoice-notes {
-    width: 61%;
-    padding: 10px;
+  width: 65%;
+  padding: 10px;
 }
-
 .invoice-totals {
-    width: 39%;
-    padding: 10px;
-    text-align: right;
+  width: 35%;
+  padding: 10px;
 }
-
 .invoice-totals table {
-    float: right;
+  float: right;
 }
-
-.invoice-totals th.col-3 {
-    padding-right: 5px;
-}
-
-.invoice-totals td.col-4 {
-    padding-left: 0px;
-    padding-right: 30px;
-}
-
-.firmas1 {
-    margin: 10px;
-    max-width: 50%;
-}
-
-.firmas2 {
-    margin: 10px;
-    max-width: 50%;
-}
-
-.pFirma {
-    text-align: center;
-}
-
-.totalFirmas {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
-    align-content: stretch;
-}
-
 .custom-footer {
-    width: 100%;
-    padding: 10px;
-    font-size: 80%;
-}
-
-.rwd {
-    overflow: auto;
-}
-
-
-/*** querys **/
-
-@media screen and (max-width: 891px) and (min-width: 768px) {
-    .usuario {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: stretch;
-        align-content: stretch;
-    }
-    h1 {
-        line-height: 30px;
-    }
-    .customer-info {
-        width: 35%;
-        padding: 10px;
-    }
-    .invoice-info {
-        width: 50%;
-        text-align: left;
-        padding-left: 120px;
-        margin-left: 80px;
-    }
-    .padreDos {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: stretch;
-        align-content: stretch;
-    }
-    .totalFirmas {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: stretch;
-        align-content: space-between;
-        word-wrap: break-word;
-    }
-}
-
-@media screen and (max-width: 790px) and (min-width: 604px) {
-    .usuario {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: stretch;
-        align-content: stretch;
-        word-wrap: break-word;
-    }
-    h1 {
-        line-height: 30px;
-    }
-    p.negrita1 {
-        margin-right: 50px;
-    }
-    p.negrita2 {
-        margin-right: 68px;
-    }
-    p.negrita3 {
-        margin-right: 20px;
-    }
-    p.negrita4 {
-        margin-right: 35px;
-    }
-    .negrita {
-        margin-right: 99px;
-    }
-    .sinSalto1 {
-        margin-right: -39px;
-    }
-    .sinSalto2 {
-        margin-right: -85px;
-    }
-    .sinSalto3 {
-        margin-right: -89px;
-    }
-    .sinSalto4 {
-        margin-right: -109px;
-    }
-    .invoice-datos {
-        margin-right: -53px;
-        padding-right: 170px;
-    }
-    .invoice-info {
-        width: 100%;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-    .customer-info {
-        width: 100%;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .padreDos {
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: stretch;
-        align-content: stretch;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .padreFlex {
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: stretch;
-        align-content: space-between;
-    }
-    .invoice-notes {
-        width: 100%;
-    }
-    .invoice-totals {
-        width: 95%;
-        margin-left: 40px;
-    }
-    .totalFirmas {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        word-wrap: break-word;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 603px) and (min-width: 415px) {
-    .invoice {
-        margin: -35px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: stretch;
-        align-content: center;
-        
-        background-color: #ffffff;
-        max-width: auto;
-        padding: 20px 0px;
-    }
-    .usuario {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        width: 100%;
-        text-align: center;
-        padding-left: 0px;
-    }
-    .company-info,
-    .top-left div {
-        width: 100%;
-        text-align: center;
-        padding-left: 0px;
-        margin: 0px;
-    }
-    h1 {
-        line-height: 30px;
-    }
-    p.negrita1 {
-        margin-right: 50px;
-    }
-    p.negrita2 {
-        margin-right: 68px;
-    }
-    p.negrita3 {
-        margin-right: 20px;
-    }
-    p.negrita4 {
-        margin-right: 35px;
-    }
-    .negrita {
-        margin-right: 99px;
-    }
-    .sinSalto1 {
-        margin-right: -39px;
-    }
-    .sinSalto2 {
-        margin-right: -85px;
-    }
-    .sinSalto3 {
-        margin-right: -89px;
-    }
-    .sinSalto4 {
-        margin-right: -109px;
-    }
-    .invoice-datos {
-        margin-right: -53px;
-        padding-right: 170px;
-    }
-    .invoice-info {
-        width: 100%;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-    .customer-info {
-        width: 100%;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .padreDos {
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: stretch;
-        align-content: stretch;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .padreFlex {
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: stretch;
-        align-content: space-between;
-    }
-    .invoice-notes {
-        width: 100%;
-    }
-    .invoice-totals {
-        width: 95%;
-        margin-left: 40px;
-    }
-    .totalFirmas {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        word-wrap: break-word;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 414px) and (min-width: 321px) {
-    .invoice {
-        margin: -35px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: stretch;
-        align-content: center;
-        text-align: center;
-        background-color: #ffffff;
-        max-width: auto;
-        padding: 20px 0px;
-    }
-    .usuario {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
-    .custom-header {
-        width: 100%;
-        text-align: center;
-    }
-    .company-info {
-        width: 100%;
-        text-align: center;
-        padding: 20px;
-    }
-    p.negrita1 {
-        margin-right: 50px;
-    }
-    p.negrita2 {
-        margin-right: 68px;
-    }
-    p.negrita3 {
-        margin-right: 20px;
-    }
-    p.negrita4 {
-        margin-right: 35px;
-    }
-    .negrita {
-        margin-right: 99px;
-    }
-    .sinSalto1 {
-        margin-right: -39px;
-    }
-    .sinSalto2 {
-        margin-right: -81px;
-    }
-    .sinSalto3 {
-        margin-right: -84px;
-    }
-    .sinSalto4 {
-        margin-right: -107px;
-    }
-    .invoice-datos {
-        margin-right: 45px;
-        padding-right: 70px;
-    }
-    h1 {
-        font-size: 200%;
-        font-weight: bold;
-        line-height: 30px;
-    }
-    .customer-info {
-        width: 100%;
-        text-align: center;
-        padding-left: 0px;
-        margin-left: 10px;
-    }
-    .invoice-info {
-        width: 100%;
-        text-align: center;
-        padding-left: 0px;
-        margin-left: 10px;
-    }
-    .padreDos {
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
-    .rwd td,
-    th.col-4 {
-        width: 100%;
-        padding: 6px;
-    }
-    .col-1 {
-        text-align: left;
-        min-width: 169px;
-    }
-    .padreFlex {
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: center;
-        align-content: space-between;
-    }
-    .invoice-totals {
-        width: 100%;
-        padding: 10px;
-        margin-right: -10px;
-    }
-    .totalFirmas {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: center;
-        align-content: center;
-        word-wrap: break-word;
-    }
-}
-
-@media screen and (max-width: 320px) and (min-width: 0px) {
-   
-    .invoice {
-        margin: -35px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: stretch;
-        align-content: center;
-        text-align: center;
-        background-color: #ffffff;
-        max-width: auto;
-        padding: 10px 0px;
-    }
-    .logo {
-       margin-left: 70px;
-    }
-    .custom-header {
-        width: auto;
-        text-align: center;
-        padding-left: 100px;
-        
-    }
-    .company-info {
-        width: 100%;
-        text-align: center;
-        padding: 0px;
-    }
-    .invoice-info,
-    .customer-info {
-        width: 100%;
-        text-align: center;
-    }
-    h1 {
-        font-size: 200%;
-        font-weight: bold;
-        line-height: 30px;
-    }
-    .customer-info {
-        width: 100%;
-        text-align: center;
-        padding-left: 0px;
-        margin-left: 10px;
-    }
-    .invoice-info {
-        width: 100%;
-        text-align: center;
-        padding-left: 0px;
-        margin-left: 10px;
-    }
-    .padreDos {
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
-    .rwd td,
-    th.col-4 {
-        width: 100%;
-        padding: 6px;
-    }
-    .col-1 {
-        text-align: left;
-        min-width: 169px;
-    }
-    .padreFlex {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: stretch;
-        align-content: stretch;
-    }
-    .invoice-totals {
-        width: 100%;
-        padding: 10px;
-        margin-right: -10px;
-    }
-    .totalFirmas {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: center;
-        align-content: center;
-        word-wrap: break-word;
-    }
+  width: 100%;
+  padding: 10px;
+  font-size: 80%;
 }
