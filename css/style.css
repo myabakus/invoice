@@ -145,6 +145,10 @@ h1 {
     font-weight: bold;
 }
 
+.invoice-items p {
+    font-size: 12px;
+}
+
 .col-1 {
     text-align: left;
     width: 450px;
