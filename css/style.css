@@ -8,16 +8,16 @@ body {
   padding: 40px;
   font-family: Quattrocento Sans;
   line-height: 150%;
-  font-size: 100%;
+  font-size: 14px;
   color: #4c4c4c;
 }
 h1 {
-  font-size: 200%;
+  font-size: 28px;
   font-weight: bold;
 }
 #company,
 #customer {
-  font-size: 120%;
+  font-size: 16px;
   font-weight: bold;
 }
 .invoice {
@@ -38,13 +38,13 @@ h1 {
   width: 100%;
   padding: 10px;
   font-family: Paytone One;
-  font-size: 250%;
+  font-size: 36px;
 }
 .custom-header {
   width: 100%;
   padding: 10px;
   line-height: 125%;
-  font-size: 80%;
+  font-size: 12px;
 }
 .company-info {
   width: 35%;
@@ -80,10 +80,12 @@ h1 {
 }
 .invoice-items thead th {
   line-height: 30px;
+  font-weight: bold;
 }
 .col-1 {
   text-align: left;
   width: 450px;
+  font-weight: normal;
 }
 .col-2 {
   text-align: right;
@@ -111,5 +113,8 @@ h1 {
 .custom-footer {
   width: 100%;
   padding: 10px;
-  font-size: 80%;
+  font-size: 12px;
+}
+.invoice-items p {
+  font-size: 12px;
 }
