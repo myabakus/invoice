@@ -1,8 +1,6 @@
 @spacing: 10px;
 @left: 65%;
 @right: 100% - @left;
-@defaultFontSize: 100%;
-@defaultLineHeight: 150%;
 
 
 *
@@ -17,14 +15,14 @@ body
     background-color: #ccc;
     padding: 40px;
     font-family: Quattrocento Sans;
-    line-height: @defaultLineHeight;
-    font-size: @defaultFontSize;
+    line-height: 150%;
+    font-size: 14px;
     color: #4c4c4c;
 }
 
 h1
 {
-    font-size: (@defaultFontSize*2);
+    font-size: 28px;
     font-weight: bold;
 }
 
@@ -36,7 +34,7 @@ div
 #company,
  #customer
 {
-    font-size: (@defaultFontSize*1.2);
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -63,15 +61,15 @@ div
     width: 100%;
     padding: @spacing;
     font-family: Paytone One;
-    font-size: (@defaultFontSize*2.5);
+    font-size: 36px;
 }
 
 .custom-header
 {
     width: 100%;
     padding: @spacing;
-    line-height: (@defaultLineHeight/1.2);
-    font-size: (@defaultFontSize*0.8);
+    line-height: 125%;
+    font-size: 12px;
 }
 
 .company-info
@@ -123,12 +121,14 @@ div
 .invoice-items thead th
 {
     line-height: 30px;
+    font-weight: bold;
 }
 
 .col-1
 {
     text-align: left;
     width: 450px;
+    font-weight: normal;
 }
 
 .col-2
@@ -170,6 +170,10 @@ div
 {
     width: 100%;
     padding: @spacing;
-    font-size: (@defaultFontSize*0.8);
+    font-size: 12px;
 }
 
+.invoice-items p
+{
+    font-size: 12px;
+}
