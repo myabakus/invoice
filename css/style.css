@@ -9,7 +9,7 @@ body {
     padding: 40px;
     font-family: Quattrocento Sans;
     line-height: 150%;
-    font-size: 100%;
+    font-size: 14px;
     color: #4c4c4c;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 h1 {
-    font-size: 200%;
+    font-size: 28px;
     font-weight: bold;
     line-height: 30px;
 }
@@ -59,7 +59,7 @@ h1 {
 
 #company,
 #customer {
-    font-size: 120%;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -83,7 +83,7 @@ h1 {
     width: 100%;
     padding: 10px;
     font-family: Paytone One;
-    font-size: 250%;
+    font-size: 36px;
     line-height: 40px;
     padding-top: 0px;
 }
@@ -92,7 +92,7 @@ h1 {
     width: 60%;
     padding: 10px;
     line-height: 125%;
-    font-size: 80%;
+    font-size: 12px;
 }
 
 .company-info {
@@ -142,11 +142,17 @@ h1 {
 
 .invoice-items thead th {
     line-height: 30px;
+    font-weight: bold;
+}
+
+.invoice-items p {
+    font-size: 12px;
 }
 
 .col-1 {
     text-align: left;
     width: 450px;
+    font-weight: normal;
 }
 
 .col-2 {
@@ -228,7 +234,7 @@ h1 {
 .custom-footer {
     width: 100%;
     padding: 10px;
-    font-size: 80%;
+    font-size: 12px;
 }
 
 .rwd {
@@ -383,7 +389,7 @@ h1 {
         justify-content: center;
         align-items: stretch;
         align-content: center;
-        
+
         background-color: #ffffff;
         max-width: auto;
         padding: 20px 0px;
@@ -555,7 +561,7 @@ h1 {
         padding-right: 70px;
     }
     h1 {
-        font-size: 200%;
+        font-size: 28px;
         font-weight: bold;
         line-height: 30px;
     }
@@ -613,7 +619,7 @@ h1 {
 }
 
 @media screen and (max-width: 320px) and (min-width: 0px) {
-   
+
     .invoice {
         margin: -35px;
         display: flex;
@@ -634,7 +640,7 @@ h1 {
         width: auto;
         text-align: center;
         padding-left: 100px;
-        
+
     }
     .company-info {
         width: 100%;
@@ -647,7 +653,7 @@ h1 {
         text-align: center;
     }
     h1 {
-        font-size: 200%;
+        font-size: 28px;
         font-weight: bold;
         line-height: 30px;
     }
