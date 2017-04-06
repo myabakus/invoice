@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -7,6 +7,9 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <title>Invoice litle</title>
+        
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.js"></script> 
+        
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/print.css" media="print">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700">
@@ -19,7 +22,12 @@
             <div class="usuario">
                 <div class="top-left">
                     <div class="logo">
-                        Miguel Uribe MV S.A.S
+<!--                        Miguel Uribe MV S.A.S-->
+                       <h2>Escribe algo</h2>
+                       
+                       <input type="text" ng-model="name">
+                       <p>{{ name }}</p>
+                        
 </div>
                     <div class="custom-header">
                         <p>ACTIVIDAD ECONÓMICA 7500</p>
