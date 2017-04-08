@@ -1,2 +1,2 @@
 # invoice
-invoice responsive
+Invoice adaptable with Vue.js
