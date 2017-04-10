@@ -23,27 +23,27 @@
 <body>
 
     <div class="invoice" id="app">
-        <div class="usuario" >
+        <div class="usuario">
             <div class="top-left">
-                <div class="logo" >
+                <div class="logo">
                     <!--                        Miguel Uribe MV S.A.S-->
                     {{ name }} <br> {{apellido}}
                 </div>
-                <div class="custom-header" >
+                <div class="custom-header">
                     <!--
                     <p>ACTIVIDAD ECONÓMICA 7500</p>
                     <p>TARIFA. ICA 9.66X1000</p>
                     <p>IVA Regimen Común</p>
                     
 -->
-                    <p v-for="parrafo in parrafos">
-                        {{ parrafo.parrafo }}
+                    <p v-for="datos in parrafos">
+                        {{ datos }}
                     </p>
                 </div>
             </div>
             <div class="company-info">
                 <p id="company">{{ name}}</p>
-<!--
+                <!--
                 <p>Nit. 900643855-4</p>
                 <p>migauribe@yahoo.com</p>
                 <p>3212900914</p>
@@ -51,35 +51,35 @@
                 <p>Bogotá</p>
                 <p>Colombia</p>
 -->
-               <p v-for="parrafo in parrafos2">
-                    {{ parrafo.parrafo2}}
-               </p>
+                <p v-for="datos in parrafos2">
+                    {{ datos }}
+                </p>
             </div>
         </div>
         <div class="line"></div>
-  
+
         <div class="padreDos">
             <div class="customer-info">
-<!--                <p id="customer">IKE ASISTENCIA COLOMBIA</p>-->
-               <p id="customer">{{ name2 }}</p>
+                <!--                <p id="customer">IKE ASISTENCIA COLOMBIA</p>-->
+                <p id="customer">{{ name2 }}</p>
                 <div class="invoice-ike">
-<!--
+                    <!--
                     <p>NIT. 900106251-3</p>
                     <p>Cll 93B 17 - 25 Piso 6</p>
                     <p>Edif. Centro Internacional de Negocios</p>
                     <p>Bogotá</p>
                     <p>Colombia</p>
 -->
-                   <p v-for="parrafo in parrafos3">
-                   {{ parrafo.parrafo3 }}
-                   </p>
+                    <p v-for="datos in parrafos3">
+                        {{ datos }}
+                    </p>
                 </div>
             </div>
             <div class="invoice-info">
-<!--                <h1 style="display: block;">Factura de Venta</h1>-->
-               <h1 style="display: block;">{{ factura }}</h1>
+                <!--                <h1 style="display: block;">Factura de Venta</h1>-->
+                <h1 style="display: block;">{{ parrafos4.factura }}</h1>
                 <div class="invoice-datos">
-<!--
+                    <!--
                     <p class="negrita negrita1">Número: </p>
                     <p class="sinSalto sinSalto1">1607</p>
                     <p class="negrita negrita2">Fecha: </p>
@@ -89,14 +89,14 @@
                     <p class="negrita negrita4">Referencia: </p>
                     <p class="sinSalto sinSalto4">Banco Popular</p>
 -->
-                   <p class="negrita negrita1"> {{ numero }} </p>
-                    <p class="sinSalto sinSalto1">{{ numDato }}</p>
-                    <p class="negrita negrita2"> {{ fecha }}</p>
-                    <p class="sinSalto sinSalto2">{{ fechaDato }}</p>
-                    <p class="negrita negrita3">{{ vencimiento }}</p>
-                    <p class="sinSalto sinSalto3">{{ venDato }}</p>
-                    <p class="negrita negrita4">{{ referencia }}</p>
-                    <p class="sinSalto sinSalto4">{{ refDato }}</p>
+                    <p class="negrita negrita1"> {{ parrafos4.numero }} </p>
+                    <p class="sinSalto sinSalto1">{{ parrafos4.numDato }}</p>
+                    <p class="negrita negrita2"> {{ parrafos4.fecha }}</p>
+                    <p class="sinSalto sinSalto2">{{ parrafos4.fechaDato }}</p>
+                    <p class="negrita negrita3">{{ parrafos4.vencimiento }}</p>
+                    <p class="sinSalto sinSalto3">{{ parrafos4.venDato }}</p>
+                    <p class="negrita negrita4">{{ parrafos4.referencia }}</p>
+                    <p class="sinSalto sinSalto4">{{ parrafos4.refDato }}</p>
                 </div>
             </div>
         </div>
@@ -104,13 +104,20 @@
             <table class="top-left rwd_auto">
                 <thead>
                     <tr>
+                        <!--
                         <th class="col-1">Descripción</th>
                         <th class="col-2">Cant</th>
                         <th class="col-3">Precio</th>
                         <th class="col-4">Total</th>
+-->
+                        <th class="col-1">{{ thead.description }}</th>
+                        <th class="col-2">{{ thead.count }}</th>
+                        <th class="col-3">{{ thead.price }}</th>
+                        <th class="col-4">{{ thead.total }}</th>
                     </tr>
                 </thead>
                 <tbody>
+                    <!--
                     <tr>
                         <td class="col-1">Consulta médica veterinaria presencial
                             <p>Hablar para consultas médicas veterinarias</p>
@@ -174,6 +181,71 @@
                         <td class="col-2">1</td>
                         <td class="col-3">100.000</td>
                         <td class="col-4">100.000,0</td>
+                    </tr>
+-->
+                    <tr>
+                        <td class="col-1">{{ tbody.tbodyr1.titulo }}
+                            <p>{{ tbody.tbodyr1.description }}</p>
+                        </td>
+                        <td class="col-2">{{ tbody.tbodyr1.count }}</td>
+                        <td class="col-3">{{ tbody.tbodyr1.price }}</td>
+                        <td class="col-4">{{ tbody.tbodyr1.total }}</td>
+                    </tr>
+                    <tr>
+                        <td class="col-1">{{ tbody.tbodyr2.titulo }}
+                            <p>{{ tbody.tbodyr2.description }}</p>
+                        </td>
+                        <td class="col-2">{{ tbody.tbodyr2.count }}</td>
+                        <td class="col-3">{{ tbody.tbodyr2.price }}</td>
+                        <td class="col-4">{{ tbody.tbodyr2.total }}</td>
+                    </tr>
+                    <tr>
+                        <td class="col-1">{{ tbody.tbodyr3.titulo }}
+                            <p>{{ tbody.tbodyr3.description }}</p>
+                        </td>
+                        <td class="col-2">{{ tbody.tbodyr3.count }}</td>
+                        <td class="col-3">{{ tbody.tbodyr3.price }}</td>
+                        <td class="col-4">{{ tbody.tbodyr3.total }}</td>
+                    </tr>
+                    <tr>
+                        <td class="col-1">{{ tbody.tbodyr4.titulo }}
+                            <p>{{ tbody.tbodyr4.description }}</p>
+                        </td>
+                        <td class="col-2">{{ tbody.tbodyr4.count }}</td>
+                        <td class="col-3">{{ tbody.tbodyr4.price }}</td>
+                        <td class="col-4">{{ tbody.tbodyr4.total }}</td>
+                    </tr>
+                    <tr>
+                        <td class="col-1">{{ tbody.tbodyr5.titulo }}
+                            <p>{{ tbody.tbodyr5.description }}</p>
+                        </td>
+                        <td class="col-2">{{ tbody.tbodyr5.count }}</td>
+                        <td class="col-3">{{ tbody.tbodyr5.price }}</td>
+                        <td class="col-4">{{ tbody.tbodyr5.total }}</td>
+                    </tr>
+                    <tr>
+                        <td class="col-1">{{ tbody.tbodyr6.titulo }}
+                            <p>{{ tbody.tbodyr6.description }}</p>
+                        </td>
+                        <td class="col-2">{{ tbody.tbodyr6.count }}</td>
+                        <td class="col-3">{{ tbody.tbodyr6.price }}</td>
+                        <td class="col-4">{{ tbody.tbodyr6.total }}</td>
+                    </tr>
+                    <tr>
+                        <td class="col-1">{{ tbody.tbodyr7.titulo }}
+                            <p>{{ tbody.tbodyr7.description }}</p>
+                        </td>
+                        <td class="col-2">{{ tbody.tbodyr7.count }}</td>
+                        <td class="col-3">{{ tbody.tbodyr7.price }}</td>
+                        <td class="col-4">{{ tbody.tbodyr7.total }}</td>
+                    </tr>
+                    <tr>
+                        <td class="col-1">{{ tbody.tbodyr8.titulo }}
+                            <p>{{ tbody.tbodyr8.description }}</p>
+                        </td>
+                        <td class="col-2">{{ tbody.tbodyr8.count }}</td>
+                        <td class="col-3">{{ tbody.tbodyr8.price }}</td>
+                        <td class="col-4">{{ tbody.tbodyr8.total }}</td>
                     </tr>
                 </tbody>
             </table>
