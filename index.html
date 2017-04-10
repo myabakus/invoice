@@ -22,14 +22,14 @@
 
 <body>
 
-    <div class="invoice">
-        <div class="usuario">
+    <div class="invoice" id="app">
+        <div class="usuario" >
             <div class="top-left">
-                <div class="logo" id="app-1">
+                <div class="logo" >
                     <!--                        Miguel Uribe MV S.A.S-->
                     {{ name }} <br> {{apellido}}
                 </div>
-                <div class="custom-header" id="app-2">
+                <div class="custom-header" >
                     <!--
                     <p>ACTIVIDAD ECONÓMICA 7500</p>
                     <p>TARIFA. ICA 9.66X1000</p>
@@ -42,35 +42,44 @@
                 </div>
             </div>
             <div class="company-info">
-                <p id="company">Miguel Uribe MV S.A.S</p>
+                <p id="company">{{ name}}</p>
+<!--
                 <p>Nit. 900643855-4</p>
                 <p>migauribe@yahoo.com</p>
                 <p>3212900914</p>
                 <p>Kr 79 No. 127C - 45 IN 2 AP 101</p>
                 <p>Bogotá</p>
                 <p>Colombia</p>
+-->
+               <p v-for="parrafo in parrafos2">
+                    {{ parrafo.parrafo2}}
+               </p>
             </div>
         </div>
         <div class="line"></div>
-        <!--
-        <div class="document-name">
-            <h1 style="display: block;">Factura de Venta</h1>
-        </div>
--->
+  
         <div class="padreDos">
             <div class="customer-info">
-                <p id="customer">IKE ASISTENCIA COLOMBIA</p>
+<!--                <p id="customer">IKE ASISTENCIA COLOMBIA</p>-->
+               <p id="customer">{{ name2 }}</p>
                 <div class="invoice-ike">
+<!--
                     <p>NIT. 900106251-3</p>
                     <p>Cll 93B 17 - 25 Piso 6</p>
                     <p>Edif. Centro Internacional de Negocios</p>
                     <p>Bogotá</p>
                     <p>Colombia</p>
+-->
+                   <p v-for="parrafo in parrafos3">
+                   {{ parrafo.parrafo3 }}
+                   </p>
                 </div>
             </div>
             <div class="invoice-info">
-                <h1 style="display: block;">Factura de Venta</h1>
+<!--                <h1 style="display: block;">Factura de Venta</h1>-->
+               <h1 style="display: block;">{{ factura }}</h1>
                 <div class="invoice-datos">
+<!--
                     <p class="negrita negrita1">Número: </p>
                     <p class="sinSalto sinSalto1">1607</p>
                     <p class="negrita negrita2">Fecha: </p>
@@ -79,6 +88,15 @@
                     <p class="sinSalto sinSalto3">19/03/2017</p>
                     <p class="negrita negrita4">Referencia: </p>
                     <p class="sinSalto sinSalto4">Banco Popular</p>
+-->
+                   <p class="negrita negrita1"> {{ numero }} </p>
+                    <p class="sinSalto sinSalto1">{{ numDato }}</p>
+                    <p class="negrita negrita2"> {{ fecha }}</p>
+                    <p class="sinSalto sinSalto2">{{ fechaDato }}</p>
+                    <p class="negrita negrita3">{{ vencimiento }}</p>
+                    <p class="sinSalto sinSalto3">{{ venDato }}</p>
+                    <p class="negrita negrita4">{{ referencia }}</p>
+                    <p class="sinSalto sinSalto4">{{ refDato }}</p>
                 </div>
             </div>
         </div>

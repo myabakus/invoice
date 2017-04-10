@@ -50,12 +50,16 @@ h1 {
 }
 
 .sinSalto2 {
-    margin-right: 25px;
+    margin-right: 30px;
 }
 
 .sinSalto3 {
-    margin-right: 22px;
+    margin-right: 28px;
 }
+
+.sinSalto4 {
+        margin-right: 10px;
+    }
 
 #company,
 #customer {
@@ -299,22 +303,22 @@ h1 {
         line-height: 30px;
     }
     p.negrita1 {
-        margin-right: 50px;
+        margin-right: 56px;
     }
     p.negrita2 {
-        margin-right: 68px;
+        margin-right: 70px;
     }
     p.negrita3 {
-        margin-right: 20px;
+        margin-right: 30px;
     }
     p.negrita4 {
-        margin-right: 35px;
+        margin-right: 40px;
     }
     .negrita {
         margin-right: 99px;
     }
     .sinSalto1 {
-        margin-right: -39px;
+        margin-right: -47px;
     }
     .sinSalto2 {
         margin-right: -85px;
@@ -416,13 +420,13 @@ h1 {
         line-height: 30px;
     }
     p.negrita1 {
-        margin-right: 50px;
+        margin-right: 55px;
     }
     p.negrita2 {
         margin-right: 68px;
     }
     p.negrita3 {
-        margin-right: 20px;
+        margin-right: 28px;
     }
     p.negrita4 {
         margin-right: 35px;
@@ -431,7 +435,7 @@ h1 {
         margin-right: 99px;
     }
     .sinSalto1 {
-        margin-right: -39px;
+        margin-right: -46px;
     }
     .sinSalto2 {
         margin-right: -85px;
@@ -530,16 +534,16 @@ h1 {
         padding: 20px;
     }
     p.negrita1 {
-        margin-right: 50px;
+        margin-right: 54px;
     }
     p.negrita2 {
         margin-right: 68px;
     }
     p.negrita3 {
-        margin-right: 20px;
+        margin-right: 29px;
     }
     p.negrita4 {
-        margin-right: 35px;
+        margin-right: 40px;
     }
     .negrita {
         margin-right: 99px;
@@ -548,13 +552,13 @@ h1 {
         margin-right: -39px;
     }
     .sinSalto2 {
-        margin-right: -81px;
+        margin-right: -78px;
     }
     .sinSalto3 {
-        margin-right: -84px;
+        margin-right: -82px;
     }
     .sinSalto4 {
-        margin-right: -107px;
+        margin-right: -99px;
     }
     .invoice-datos {
         margin-right: 45px;
