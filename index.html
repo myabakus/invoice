@@ -27,7 +27,7 @@
             <div class="top-left">
                 <div class="logo">
                     <!--                        Miguel Uribe MV S.A.S-->
-                    {{ name }} <br> {{apellido}}
+                    {{ company.name }} <br> 
                 </div>
                 <div class="custom-header">
                     <!--
@@ -36,8 +36,8 @@
                     <p>IVA Regimen Común</p>
                     
 -->
-                    <p v-for="datos in parrafos">
-                        {{ datos }}
+                    <p v-for="compa in company.activity">
+                        {{ compa }}
                     </p>
                 </div>
             </div>
@@ -51,8 +51,8 @@
                 <p>Bogotá</p>
                 <p>Colombia</p>
 -->
-                <p v-for="datos in parrafos2">
-                    {{ datos }}
+                <p v-for="inf in company.info">
+                    {{ inf }}
                 </p>
             </div>
         </div>
@@ -61,7 +61,7 @@
         <div class="padreDos">
             <div class="customer-info">
                 <!--                <p id="customer">IKE ASISTENCIA COLOMBIA</p>-->
-                <p id="customer">{{ name2 }}</p>
+                <p id="customer">{{ customerInfo.name }}</p>
                 <div class="invoice-ike">
                     <!--
                     <p>NIT. 900106251-3</p>
@@ -70,14 +70,14 @@
                     <p>Bogotá</p>
                     <p>Colombia</p>
 -->
-                    <p v-for="datos in parrafos3">
-                        {{ datos }}
+                    <p v-for="custom in customerInfo.customer">
+                        {{ custom }}
                     </p>
                 </div>
             </div>
             <div class="invoice-info">
                 <!--                <h1 style="display: block;">Factura de Venta</h1>-->
-                <h1 style="display: block;">{{ parrafos4.factura }}</h1>
+                <h1 style="display: block;">{{ invoiceInfo.name }}</h1>
                 <div class="invoice-datos">
                     <!--
                     <p class="negrita negrita1">Número: </p>
@@ -89,14 +89,14 @@
                     <p class="negrita negrita4">Referencia: </p>
                     <p class="sinSalto sinSalto4">Banco Popular</p>
 -->
-                    <p class="negrita negrita1"> {{ parrafos4.numero }} </p>
-                    <p class="sinSalto sinSalto1">{{ parrafos4.numDato }}</p>
-                    <p class="negrita negrita2"> {{ parrafos4.fecha }}</p>
-                    <p class="sinSalto sinSalto2">{{ parrafos4.fechaDato }}</p>
-                    <p class="negrita negrita3">{{ parrafos4.vencimiento }}</p>
-                    <p class="sinSalto sinSalto3">{{ parrafos4.venDato }}</p>
-                    <p class="negrita negrita4">{{ parrafos4.referencia }}</p>
-                    <p class="sinSalto sinSalto4">{{ parrafos4.refDato }}</p>
+                    <p class="negrita negrita1"> {{ invoiceInfo.invoice.numero }} </p>
+                    <p class="sinSalto sinSalto1">{{ invoiceInfo.invoice.numDato }}</p>
+                    <p class="negrita negrita2"> {{ invoiceInfo.invoice.fecha }}</p>
+                    <p class="sinSalto sinSalto2">{{ invoiceInfo.invoice.fechaDato }}</p>
+                    <p class="negrita negrita3">{{ invoiceInfo.invoice.vencimiento }}</p>
+                    <p class="sinSalto sinSalto3">{{ invoiceInfo.invoice.venDato }}</p>
+                    <p class="negrita negrita4">{{ invoiceInfo.invoice.referencia }}</p>
+                    <p class="sinSalto sinSalto4">{{ invoiceInfo.invoice.refDato }}</p>
                 </div>
             </div>
         </div>
@@ -252,35 +252,37 @@
         </div>
         <div class="padreFlex">
             <div class="invoice-notes">
-                <p>Nota</p>
-                <p>Nos acogemos a los beneficios establecidos en la Ley 1429 de 2010. Favor no aplicar Retención en la Fuente. CONSIGNAR EN BANCOLOMBIA CUENTA DE AHORROS No. 20611685999 A NOMBRE DE MIGUEL URIBE MV S.A.S</p>
+                <p v-for="invoice in invoiceNotes">
+                {{ invoice }}
+                </p>
+<!--                <p>Nos acogemos a los beneficios establecidos en la Ley 1429 de 2010. Favor no aplicar Retención en la Fuente. CONSIGNAR EN BANCOLOMBIA CUENTA DE AHORROS No. 20611685999 A NOMBRE DE MIGUEL URIBE MV S.A.S</p>-->
             </div>
             <div class="invoice-totals">
                 <table>
                     <tbody style="display: table-row-group;">
                         <tr>
-                            <th class="col-3">Subtotal</th>
-                            <td class="col-4">930.000</td>
+                            <th class="col-3">{{ invoiceTotal.head.headSubtotal }}</th>
+                            <td class="col-4">{{ invoiceTotal.headData.dataSubtotal }}</td>
                         </tr>
                         <tr>
-                            <th class="col-3">+IVA 16%</th>
-                            <td class="col-4">148,800</td>
+                            <th class="col-3">{{ invoiceTotal.head.headIva }}</th>
+                            <td class="col-4">{{ invoiceTotal.headData.dataIva }}</td>
                         </tr>
                         <tr>
-                            <th class="col-3">Total</th>
-                            <td class="col-4">1,078,800</td>
+                            <th class="col-3">{{ invoiceTotal.head.headTotal }}</th>
+                            <td class="col-4">{{ invoiceTotal.headData.dataTotal }}</td>
                         </tr>
                         <tr>
-                            <th class="col-3">-Rete IVA 15%</th>
-                            <td class="col-4">22,320</td>
+                            <th class="col-3">{{ invoiceTotal.head.headRete }}</th>
+                            <td class="col-4">{{ invoiceTotal.headData.dataRete }}</td>
                         </tr>
                         <tr>
-                            <th class="col-3">-Retefuente 3.5%</th>
-                            <td class="col-4">32,550</td>
+                            <th class="col-3">{{ invoiceTotal.head.headRetefuente }}</th>
+                            <td class="col-4">{{ invoiceTotal.headData.dataRetefuente }}</td>
                         </tr>
                         <tr>
-                            <th class="col-3">Saldo</th>
-                            <td class="col-4">1,023,930</td>
+                            <th class="col-3">{{ invoiceTotal.head.headSaldo }}</th>
+                            <td class="col-4">{{ invoiceTotal.headData.dataSaldo }}</td>
                         </tr>
                     </tbody>
                 </table>
@@ -288,16 +290,16 @@
         </div>
         <div class="totalFirmas">
             <div class="firmas1">
-                <p class="lineaA">____________________________________________</p>
-                <p class="pFirma">Elaborado por</p>
+                <p class="lineaA">{{ totalFirmas.firma1.lineaA }}</p>
+                <p class="pFirma">{{ totalFirmas.firma1.pFirma }}</p>
             </div>
             <div class="firmas2">
-                <p class="lineaA">____________________________________________</p>
-                <p class="pFirma">Aceptado, Firma y/o Sello</p>
+                <p class="lineaA">{{ totalFirmas.firma2.lineaA }}</p>
+                <p class="pFirma">{{ totalFirmas.firma2.pFirma }}</p>
             </div>
         </div>
         <div class="custom-footer">
-            <p>RESOLUCION DIAN 320001302741 DEL 19 DE AGOSTO DE 2015. NUMERACIÓN AUTORIZADA POR COMPUTADOR 507 - 2000</p>
+            <p>{{ footer }}</p>
         </div>
     </div>
 </body>
