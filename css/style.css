@@ -31,7 +31,9 @@ h1 {
 .invoice-datos {
     padding-top: 10px;
 }
-
+.invoice-datos th {
+    font-weight: bold;
+}
 .invoice-ike {
     padding-top: 9px;
 }
