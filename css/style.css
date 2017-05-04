@@ -31,30 +31,11 @@ h1 {
 .invoice-datos {
     padding-top: 10px;
 }
-
-.invoice-ike {
-    padding-top: 12px;
-}
-
-.negrita {
+.invoice-datos th {
     font-weight: bold;
 }
-
-.sinSalto {
-    float: right;
-    margin-top: -24px;
-}
-
-.sinSalto1 {
-    margin-right: 69px;
-}
-
-.sinSalto2 {
-    margin-right: 25px;
-}
-
-.sinSalto3 {
-    margin-right: 22px;
+.invoice-ike {
+    padding-top: 9px;
 }
 
 #company,
@@ -110,8 +91,10 @@ h1 {
 
 .customer-info {
     width: 36%;
-    padding: 10px;
-    padding-top: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 13px;
 }
 
 .invoice-info {
@@ -298,33 +281,6 @@ h1 {
     h1 {
         line-height: 30px;
     }
-    p.negrita1 {
-        margin-right: 50px;
-    }
-    p.negrita2 {
-        margin-right: 68px;
-    }
-    p.negrita3 {
-        margin-right: 20px;
-    }
-    p.negrita4 {
-        margin-right: 35px;
-    }
-    .negrita {
-        margin-right: 99px;
-    }
-    .sinSalto1 {
-        margin-right: -39px;
-    }
-    .sinSalto2 {
-        margin-right: -85px;
-    }
-    .sinSalto3 {
-        margin-right: -89px;
-    }
-    .sinSalto4 {
-        margin-right: -109px;
-    }
     .invoice-datos {
         margin-right: -53px;
         padding-right: 170px;
@@ -389,7 +345,6 @@ h1 {
         justify-content: center;
         align-items: stretch;
         align-content: center;
-
         background-color: #ffffff;
         max-width: auto;
         padding: 20px 0px;
@@ -414,33 +369,6 @@ h1 {
     }
     h1 {
         line-height: 30px;
-    }
-    p.negrita1 {
-        margin-right: 50px;
-    }
-    p.negrita2 {
-        margin-right: 68px;
-    }
-    p.negrita3 {
-        margin-right: 20px;
-    }
-    p.negrita4 {
-        margin-right: 35px;
-    }
-    .negrita {
-        margin-right: 99px;
-    }
-    .sinSalto1 {
-        margin-right: -39px;
-    }
-    .sinSalto2 {
-        margin-right: -85px;
-    }
-    .sinSalto3 {
-        margin-right: -89px;
-    }
-    .sinSalto4 {
-        margin-right: -109px;
     }
     .invoice-datos {
         margin-right: -53px;
@@ -529,33 +457,6 @@ h1 {
         text-align: center;
         padding: 20px;
     }
-    p.negrita1 {
-        margin-right: 50px;
-    }
-    p.negrita2 {
-        margin-right: 68px;
-    }
-    p.negrita3 {
-        margin-right: 20px;
-    }
-    p.negrita4 {
-        margin-right: 35px;
-    }
-    .negrita {
-        margin-right: 99px;
-    }
-    .sinSalto1 {
-        margin-right: -39px;
-    }
-    .sinSalto2 {
-        margin-right: -81px;
-    }
-    .sinSalto3 {
-        margin-right: -84px;
-    }
-    .sinSalto4 {
-        margin-right: -107px;
-    }
     .invoice-datos {
         margin-right: 45px;
         padding-right: 70px;
@@ -619,7 +520,6 @@ h1 {
 }
 
 @media screen and (max-width: 320px) and (min-width: 0px) {
-
     .invoice {
         margin: -35px;
         display: flex;
@@ -634,13 +534,12 @@ h1 {
         padding: 10px 0px;
     }
     .logo {
-       margin-left: 70px;
+        margin-left: 70px;
     }
     .custom-header {
         width: auto;
         text-align: center;
         padding-left: 100px;
-
     }
     .company-info {
         width: 100%;
